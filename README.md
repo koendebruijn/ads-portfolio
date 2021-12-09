@@ -1,18 +1,31 @@
 # ADS Portfolio - Koen de Bruijn (18100198)
 
-[Open test notebook](https://github.com/koendebruijn/ads-portfolio/blob/main/notebooks/test.ipynb)
+## Table of contents
+
+1.  [Datacamp courses](#Datacamp%20courses)
+
+## 1. Datacamp courses
+
+I have completed all the necessary Datacamp courses. I had a bit of prior knowledge of Python, But I have decided to make all the courses as it is a nice refresher. Furthermore, I did not have any difficulties making the Datacamp courses.
 
 <details>
-<summary>Open to see code</summary>
-<p>
+<summary>Open to see Statements of Accomplishments</summary>
 
-Here is the code
+![cert](./datacamp/cert1.png)
+![cert](./datacamp/cert2.png)
+![cert](./datacamp/cert3.png)
+![cert](./datacamp/cert4.png)
+![cert](./datacamp/cert5.png)
+![cert](./datacamp/cert6.png)
+![cert](./datacamp/cert7.png)
+![cert](./datacamp/cert8.png)
+![cert](./datacamp/cert9.png)
+![cert](./datacamp/cert10.png)
+![cert](./datacamp/cert11.png)
+![cert](./datacamp/cert12.png)
+![cert](./datacamp/cert13.png)
+![cert](./datacamp/cert14.png)
+![cert](./datacamp/cert15.png)
+![cert](./datacamp/cert16.png)
 
-```py
-print("Hello World")
-```
-
-![datascience](https://datasciencedistrict.nl/wp-content/uploads/2020/03/databanner.png)
-
-</p>
 </details>
