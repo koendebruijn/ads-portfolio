@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-1.  [Datacamp courses](#Datacamp%20courses)
+1.  [Datacamp courses](#1.-Datacamp-courses)
 
 ## 1. Datacamp courses
 
