@@ -1,7 +1,5 @@
 # ADS Portfolio - Koen de Bruijn (18100198)
 
-<hr>
-
 ## Table of contents
 
 1.  [Datacamp courses](#datacamp-courses)
