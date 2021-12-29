@@ -9,6 +9,8 @@
 
 <hr>
 
+[test](./chapters/datacamp.md)
+
 ## Datacamp courses
 
 I have completed all the necessary Datacamp courses. I had a bit of prior knowledge of Python, But I have decided to make all the courses as it is a nice refresher. Furthermore, I did not have any difficulties making the Datacamp courses.
