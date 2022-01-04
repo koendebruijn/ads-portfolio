@@ -75,25 +75,28 @@ Ik vind dat ik deze minor best goed heb gedaan. Ik ben begonnen met nul kennis v
 
 > The student reflected in a sufficient way to his own learning objectives. The reflection contains at least 400 words and a reflection method (like STARR) was used.
 
-| STARR     | Beschrijving |
-| --------- | ------------ |
-| Situatie  |              |
-| Taak      |              |
-| Actie     |              |
-| Resultaat |              |
-| Reflectie |              |
+**Situatie**\
+**Taak**\
+**Actie**\
+**Resultaat**\
+**Reflectie**\
 
 ## Evaluation on the group project
 
-> The student reflected in a sufficient way to his own learning objectives. The reflection contains at least 400 words and a reflection method (like STARR) was used.
+**Situatie**\
+Voor dit project maakte ik deel uit van een team van 5 andere studenten. 3 van deze studenten waren ook software engineer net als ik. De andere studenten studeerde bedrijfskunde en bestuurskunde. Ik vond het persoonlijk erg fijn dat we een mix van verschillende opleidingen haddden in ons project groep. Dit zorgde in sommige gevallen op andere perspectiven op een probleem
 
-| STARR     | Beschrijving |
-| --------- | ------------ |
-| Situatie  |              |
-| Taak      |              |
-| Actie     |              |
-| Resultaat |              |
-| Reflectie |              |
+**Taak**\
+Voor ons project werkte wij met scrum en gebruikte GitHub als scrumboard. Wij hadden elke ochtend een daily standup waarin wij onze voortgang en eventuelen problemen vertelden aan de andere groepsleden. Wij hadden afgesproken om tijdens een minor een mix van fysiek en thuis werk te hanteren. Iedereen had ook eigen taken. Zo was iemand verantwoordelijk voor het maken van de notities tijdens de meetings met de begeleiders of de scrummaster / productowner die in GitHub elke keer nieuwe taken stories aanmaakt. Wij hanteerde sprints van 2 weken met op de helft van de sprint een refinement en op het einde een retrospective.
+
+**Actie**\
+Tijdens het project hebben wij op verschillende manieren gewerkt. Het hing vaak een beetje af van het moment in het project waar wij ons bevonden. Op sommige momenten konden wij heel goed parallel werken. Iedereen had zijn eigen taken en kon deze zelfstandig oplossen. Andere momenten ging dit minder goed, omdat er bijvoorbeeld een taak af moest zijn voordat de andere taak kon beginnen. Dit zorgde af en toe voor een soort bottlenecks.
+
+**Resultaat**\
+Ik ben erg tevreden hoe wij als groep dit project hebben afgerond. Iedereen was het gehele project erg gemotiveerd en positief over onze geboekte resultaten. Een van de docenten benoemde tijdens een meeting dat je altijd ergens tijdens het project de moed kan verliezen door bijvoorbeeld slechte resultaten of weinig vooruitgang. Zo zat er bijvoorbeeld een foutje in het preprocessen van de audio. Dit leidde tot een extreem hoge accuracy, maar dit was helaas niet representatief door verkeerde input data. Wij zijn als team heel goed door dit moment heengekomen en waren vast beraden om dit resultaat alsnog te behalen.
+
+**Reflectie**\
+Zoals eerder benoemd is de samenwerking in dit groepje mij erg goed bevallen en heb ik eigenlijk geen negative punten te noemen over het team of de samenwerking. Tijdens de retrospective bespraken we ook de aandachtspunten binnen het team en bedachten we een oplossing zodat dit niet nog eens zou gebeuren. Ik heb nog wel een aandachts puntje voor mijzelf in volgende projecten. Ik merkte dat ik iets te vaak door mijn wekken ben heen geslapen en ga hier voor een volgend project zeker extra aandacht aanbesteden dat dit niet nog vaker gebeurd.
 
 ## Research project
 
