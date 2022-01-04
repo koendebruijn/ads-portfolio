@@ -48,15 +48,28 @@ Ik heb alle nodige Datacamp courses voltooit. Ik had al een beetje Python voorke
 
 ## Reflection on own contribution
 
-> The student reflected in a sufficient way to his own contribution to the project. The reflection contains at least 400 words and a reflection method (like STARR) was used.
+**Situation**\
+Voor deze minor heb ik deel genomen aan het Smart Teddy project. Ik had voordat ik deelnam aan deze minor geen kennis over data science of artificial intelligence. Voor dit project was het de bedoeling om emotie te classificeren vanuit audio. Voor dit project werkte ik met 5 andere studenten samen.
 
-| STARR     | Beschrijving |
-| --------- | ------------ |
-| Situatie  |              |
-| Taak      |              |
-| Actie     |              |
-| Resultaat |              |
-| Reflectie |              |
+**Taak**\
+De eerste periode van deze minor ben ik vooral bezig geweest met audio. Ik heb gekeken op welke manieren je audio kan visualizeren en welke _features_ je kunt extracten uit audio. Ik vond deze taak heel interresant omdat ik hiervoor nog niet wist wat voor data je allemaal kunt krijgen en weergeven vanuit een audio bestand. Zie hier de [notebook](notebooks/visualizing_audio.ipynb) & [story](https://github.com/koendebruijn/Emotions/issues/20).
+
+Daarna heeft iedereen zelf een machine learning model toegepast voor ons project. Dit was namelijk een vereiste van de minor. Wij hadden het idee om allemaal een verschillend model toe te passen op ons project om vervolgens te vergelijken welke het best presteert op onze data. Ik heb gekozen om een _Support Vector Machine (SVM)_ toe te passen. Ik heb voor dit model gekozen, omdat deze een aantal keer naar voren is gekomen in het vooronderzoek voor dit project. Zie hier de bijbehorende [notebook](notebooks/svm.ipynb) & [story](https://github.com/koendebruijn/Emotions/issues/29).
+
+Tijdens het voor onderzoek kwamen we erachter dat veel andere onderzoekers gebruik maakte van augmentation. Wij hebben dit ook toegepast door het maken van een de _Augemter class_. Deze class zou het simpeler moeten maken om je audio te augmenteren en voorkomt gedupliceerde code. [notebook](notebooks/augmentatuib.ipynb) & [story](https://github.com/koendebruijn/Emotions/issues/39).
+
+Als laatste heb ik samen met Julian gewerkt aan het prototype. Dit prototype is gemaakt voor de mensen die veder gaan met de applicatie voor de Smart Teddy. Het prototype geeft een op een hele simpele manier weer hoe je het model kunt gebruiken in de echte applicatie. Ook was het voor ons als groep leuk om te zien hoe het model werkt in een echte (wel hele simpele) applicatie. [prototype code](https://github.com/koendebruijn/Emotions/tree/main/prototype) & [story](https://github.com/koendebruijn/Emotions/issues/72)
+
+Natuurlijk heb ik nog meer dingen uitgevoerd naast de bovenstaande taken, maar dit vond ik persoonlijk zelf een paar van de leukste. [scrum board](https://github.com/koendebruijn/Emotions/projects/1)
+
+**Actie**\
+Wanneer ik tegen problemen opliep was Google vaak mijn eerste hulpmiddel. De kans is namelijk al heel groot dat iemand voor mij dit probleem al heeft gehad. Zo kan ik gemakkelijk de oplossing vinden en deze toepassen op ons project. Als een project lid veel kennis had over een onderwerp dan stelde ik deze persoon vaak de vraag tijdens of na de daily standup of ik stuurde een bericht in ons communicatie kanaal.
+
+**Resultaat**\
+Ik ben erg tevreden met alle resultaten die ik heb gemaakt tijdens het project. Ik denk dat iedereen een gelijke bijdragen heeft geleverd aan het project. Dit is ook te zien aan het aantal taken dat bij iedereen is toegewezen. In eerste instantie leek het prototype niet te werken, maar na veel debuggen bleek het een probleem te zijn met mijn M1 (ARM) processor en werkte het gelukkig wel op de x86 architectuur.
+
+**Reflectie**\
+Ik vind dat ik deze minor best goed heb gedaan. Ik ben begonnen met nul kennis van data science en we zijn als groep geeindigd met een werkend Convolutial Neural Network (CNN) dat emoties kan classificeren. Ik zelf ben dan ook uitersterd te vreden over de resulaten die zowel ik als de rest van mijn groep hebben geboekt. Het punt dat mij het meest is bijgestaan is _Garbage in Garbage out_. Ik heb dit ook zelf mee gemaakt nadat de resultaten van de CNN aanzienlijk zijn verhoogd na het uitvoeren van data cleaning. Wat ik tijdens deze minor heb geleerd ga ik ook zeker toepassen in mijn latere projecten als software engineer.
 
 ## Reflection on own learning objectives
 
@@ -149,6 +162,20 @@ The student explains why the chosen configuration is reasonable (for instance us
 ### Data cleansing
 
 > The student cleansed the data in a good and sufficient way.
+
+De audio bestanden uit onze dataset beginnen en eidigen vaak met een stuk silte. Wij hebben librosa gebruikt om deze stilte eraf te trimmen. Dit leide namelijk tot een betere presatie van de models.
+
+<details>
+<summary>Open voor de code snippet voor het cleanen van de audio</summary>
+
+```py
+def _process_audio(value):
+    x, sample_rate = librosa.load(value['file_path'], sr=44100)
+    x, index = librosa.effects.trim(x, top_db=20)
+    return x, sample_rate
+```
+
+</details>
 
 ### Data preparation
 
