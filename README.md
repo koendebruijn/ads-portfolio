@@ -73,13 +73,32 @@ Ik vind dat ik deze minor best goed heb gedaan. Ik ben begonnen met nul kennis v
 
 ## Reflection on own learning objectives
 
-> The student reflected in a sufficient way to his own learning objectives. The reflection contains at least 400 words and a reflection method (like STARR) was used.
-
 **Situatie**\
+Ik heb deze minor gekozen, omdat data science en artificial intelligence momenteel een erg hot ding is in de wereld van software engineering. Er is bijna geen applicatie meer te vinden waar geen artificial intelligence in gebruikt word. Zoals al eerder benoemd had ik vrij weinig kennis op het gebied van data science. Ik had daarom geen leer doelen voor mijzelf opgesteld, maar ben ik uitgegaan van de _General Objectives_ die staan beschreven bij de Osiris cursus.
+
 **Taak**\
+Na de eerste paar lessen had ik een beter beeld van mijn leerdoelen. Deze waren als volgt:
+
+1. Goed overweg kunnen met de data science Python libraries (numpy, matplotlib, pandas, librosa).
+2. Leren werken met machine learning modellen
+3. Ik wil goed leren visualizeren zodat ik kan zien hoe mijn data eruit zien.
+4. Beter worden in het schrijven van een onderzoek
+5. (Convolutial) Neural Networks toepassen op verschillende datasets
+
 **Actie**\
+Om mijn leerdoelen te halen heb ik naast de colleges ook zelf geleerd via andere kanalen. Ik vind het persoonlijk erg fijn om het zelfde onderwerp door verschillende manieren uitgelegd te krijgen. Omdat niet iedereen een onderwerp het zelfde uitlegd leer ik het onderwerp vanuit verschillende perspectiven en zie ik de overeenkomsten en verschillen van methodes gebruikt bij de leraren.
+
 **Resultaat**\
+Om mijn leerdoelen te halen heb ik verschillende stappen ondernomen.
+
+1. Om dit leerdoel te behalen heb ik de DataCamp courses behaald. Deze courses gingen in op alle libraries die veel gebruikt worden in datascience. Helaas was er geen course over librosa dus om deze library te leren heb ik video's op youtube gezocht en bekeken.
+2. Voor het leren van de machine learning models waren de colleges erg nuttig. Hierin werden een aantal modellen besproken en uitgelegd. Veder gingen een aantal van de DataCamp courses ook over machine learnign modellen. Ook heeft het youtube kanaal [Tech With Tim](https://www.youtube.com/c/TechWithTim) heeft mij ook erg geholpen. Hij behandeeld veer onderwerpen die te maken hebben met Python.
+3. Hetzelde geld voor data visualizatie. De DataCamp courses waren erg behulpzaam in het leren van dit onderwerp. Ook heeft de les over visualization erg geholpen. Uiteindelijk heb ik dit het beste geleerd door gewoon te doen. Ik heb op kaggle datasets gezocht en heb deze op verschillende manieren geprobeerd te visualizeren.
+4. Er stonden op BlackBoard een aantal slides over het schrijven van een paper. Deze heb ik allemaal goed doorgenomen. Veder heb ik op YouTube een aantal filmpjes gekeken over het schrijven van een paper. Net als het vorige leerdoel heb ik dit ook geleerd door het gewoon te gaan doen.
+5. Helaas vind ik dat ik dit leerdoel niet voldoende heb gehaald. Voor dit leerdoel heb ik alleen de lessen gevolgd en een [YouTube course](https://www.youtube.com/watch?v=c36lUUr864M) gevolgt. Ik ben helaas niet toegekomen aan het toepassen van (C)NN's op verschillende datasets.
+
 **Reflectie**\
+Ik heb tijdens deze minor heel veel nieuwe dingen geleerd waar ik later veel aan ga hebben. Ik zowel geleerd over welke verschillende machine learning modellen met allerlei verschillende toepassingen. Ik heb veel geleerd over het doen van een onderzoek en het uitwerken hiervan. Ook ben ik beter geworden in het lezen van grafieken en het weergeven van data op verschillende manieren. Helaas ben ik niet toegekomen aan het toepassen van een (C)NN. Wel heb ik alle slides vanuit de lessen opgeslagen en ga ik hier zeker nog mee aan de slag na deze minor.
 
 ## Evaluation on the group project
 
