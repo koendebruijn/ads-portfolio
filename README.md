@@ -27,22 +27,21 @@ Ik heb alle nodige Datacamp courses voltooit. Ik had al een beetje Python voorke
 <details>
 <summary>Open om alle <i>Statements of Accomplishments</i> te zien</summary>
 
-![cert](./datacamp/cert1.png)
-![cert](./datacamp/cert2.png)
-![cert](./datacamp/cert3.png)
-![cert](./datacamp/cert4.png)
-![cert](./datacamp/cert5.png)
-![cert](./datacamp/cert6.png)
-![cert](./datacamp/cert7.png)
-![cert](./datacamp/cert8.png)
-![cert](./datacamp/cert9.png)
-![cert](./datacamp/cert10.png)
-![cert](./datacamp/cert11.png)
-![cert](./datacamp/cert12.png)
-![cert](./datacamp/cert13.png)
-![cert](./datacamp/cert14.png)
-![cert](./datacamp/cert15.png)
-![cert](./datacamp/cert16.png)
+![cert](./assets/datacamp/cert1.png)
+![cert](./assets/datacamp/cert2.png)
+![cert](./assets/datacamp/cert3.png)
+![cert](./assets/datacamp/cert4.png)
+![cert](./assets/datacamp/cert5.png)
+![cert](./assets/datacamp/cert6.png)
+![cert](./assets/datacamp/cert7.png)
+![cert](./assets/datacamp/cert8.png)
+![cert](./assets/datacamp/cert9.png)
+![cert](./assets/datacamp/cert10.png)
+![cert](./assets/datacamp/cert11.png)
+![cert](./assets/datacamp/cert12.png)
+![cert](./assets/datacamp/cert14.png)
+![cert](./assets/datacamp/cert15.png)
+![cert](./assets/datacamp/cert16.png)
 
 </details>
 
@@ -52,11 +51,11 @@ Ik heb alle nodige Datacamp courses voltooit. Ik had al een beetje Python voorke
 Voor deze minor heb ik deel genomen aan het Smart Teddy project. Ik had voordat ik deelnam aan deze minor geen kennis over data science of artificial intelligence. Voor dit project was het de bedoeling om emotie te classificeren vanuit audio. Voor dit project werkte ik met 5 andere studenten samen.
 
 **Taak**\
-De eerste periode van deze minor ben ik vooral bezig geweest met audio. Ik heb gekeken op welke manieren je audio kan visualiseren en welke _features_ je kunt extracten uit audio. Ik vond deze taak heel interessant omdat ik hiervoor nog niet wist wat voor data je allemaal kunt krijgen en weergeven vanuit een audiobestand. Zie hier de [notebook](notebooks/visualizing_audio.ipynb) & [story](https://github.com/koendebruijn/Emotions/issues/20).
+De eerste periode van deze minor ben ik vooral bezig geweest met audio. Ik heb gekeken op welke manieren je audio kan visualiseren en welke _features_ je kunt extracten uit audio. Ik vond deze taak heel interessant omdat ik hiervoor nog niet wist wat voor data je allemaal kunt krijgen en weergeven vanuit een audiobestand. Zie hier de [notebook](assets/notebooks/visualizing_audio.ipynb) & [story](https://github.com/koendebruijn/Emotions/issues/20).
 
-Daarna heeft iedereen zelf een machine learning model toegepast voor ons project. Dit was namelijk een vereiste van de minor. Wij hadden het idee om allemaal een verschillend model toe te passen op ons project om vervolgens te vergelijken welke het best presteert op onze data. Ik heb gekozen om een _Support Vector Machine (SVM)_ toe te passen. Ik heb voor dit model gekozen, omdat deze een aantal keren naar voren is gekomen in het vooronderzoek voor dit project. Zie hier de bijbehorende [notebook](notebooks/svm.ipynb) & [story](https://github.com/koendebruijn/Emotions/issues/29).
+Daarna heeft iedereen zelf een machine learning model toegepast voor ons project. Dit was namelijk een vereiste van de minor. Wij hadden het idee om allemaal een verschillend model toe te passen op ons project om vervolgens te vergelijken welke het best presteert op onze data. Ik heb gekozen om een _Support Vector Machine (SVM)_ toe te passen. Ik heb voor dit model gekozen, omdat deze een aantal keren naar voren is gekomen in het vooronderzoek voor dit project. Zie hier de bijbehorende [notebook](assets/notebooks/svm.ipynb) & [story](https://github.com/koendebruijn/Emotions/issues/29).
 
-Tijdens het voor onderzoek kwamen we erachter dat veel andere onderzoekers gebruik maakte van augmentation. Wij hebben dit ook toegepast door het maken van een de _Augemter class_. Deze class zou het simpeler moeten maken om je audio te augmenteren en voorkomt gedupliceerde code. [notebook](notebooks/augmentatuib.ipynb) & [story](https://github.com/koendebruijn/Emotions/issues/39).
+Tijdens het voor onderzoek kwamen we erachter dat veel andere onderzoekers gebruik maakte van augmentation. Wij hebben dit ook toegepast door het maken van een de _Augemter class_. Deze class zou het simpeler moeten maken om je audio te augmenteren en voorkomt gedupliceerde code. [notebook](assets/notebooks/augmentation.ipynb) & [story](https://github.com/koendebruijn/Emotions/issues/39).
 
 Als laatste heb ik samen met Julian gewerkt aan het prototype. Dit prototype is gemaakt voor de mensen die veder gaan met de applicatie voor de Smart Teddy. Het prototype geeft op een hele simpele manier weer hoe je het model kunt gebruiken in de echte applicatie. Ook was het voor ons als groep leuk om te zien hoe het model werkt in een echte (wel hele simpele) applicatie. [prototype code](https://github.com/koendebruijn/Emotions/tree/main/prototype) & [story](https://github.com/koendebruijn/Emotions/issues/72)
 
