@@ -122,13 +122,19 @@ Zoals eerder benoemd is de samenwerking in dit groepje mij erg goed bevallen en 
 
 > The student has clearly described the context (reason and problem definition) and research questions that are reasonable given the context.
 
+<!-- TODO -->
+
 ### Evaluation
 
 > The student has given several clear and motivated directions for future work.
 
+<!-- TODO -->
+
 ### Conclusions
 
 > The student has discussed the results, illustrated by examples (qualitative analysis)and answers the original research questions based on the findings in this study and has tested the outcomes for statistical significance.
+
+<!-- TODO -->
 
 ### Planning
 
@@ -156,13 +162,25 @@ Wij hebben als groep ook een roadmap gemaakt. Dit vonden wij allemaal erg handig
 
 > The student has supported their model selection with references from literature
 
-Voor het project heb ik een SVM machine learning model gemaakt. Ik heb dit model gekozen, omdat ik tijdens het literatuur onderzoek [dit](https://www.sciencedirect.com/science/article/pii/S1746809420300501) onderzoek heb gevonden. In dit onderzoek word een SVM gebruikt voor het classifiseren van emotie op de RAVDESS dataset.
+Voor het project heb ik een SVM machine learning model gemaakt. Ik heb dit model gekozen, omdat ik tijdens het literatuur onderzoek [dit onderzoek](https://www.sciencedirect.com/science/article/pii/S1746809420300501) heb gevonden. In dit onderzoek word een SVM gebruikt voor het classifiseren van emotie op de RAVDESS dataset.
+
+Zoals eerder benoemd heeft ieder project lid een machine learning model gekozen om te implementeren. Daarna wilde wij alle resultaten met elkaar vergelijken. Om alles makkelijk te runnen hebben we een `BaseModel` class gemaakt. Elk model overerft deze class.
+
+```py
+class BaseModel():
+
+    def train(cls):
+        raise NotImplementedError
+
+    def grid_search():
+        raise NotImplementedError
+```
+
+[Zie hier het notebook voor de SVM](assets/notebooks/svm.ipynb)
 
 ### Configuring a Model
 
-The student explains why the chosen configuration is reasonable (for instance using relevant literature)
-
->
+> The student explains why the chosen configuration is reasonable (for instance using relevant literature)
 
 ### Training a model
 
@@ -171,6 +189,30 @@ The student explains why the chosen configuration is reasonable (for instance us
 ### Evaluating a model
 
 > The student compares several models and additionally explains the differences between the models.
+
+Zoals eerder benoemd hebben we allemaal een model gemaakt die de `BaseModel` oveerft. Daarna heb ik een `moddel_runner` ontwikkeld waarin wij heel simpel alle modellen kunnen runnen op verschillende datasets.
+
+```py
+# Dit zijn de modellen die gerunt moeten worden
+models = [KNN, SVM, MLP, LogisticalRegression]
+
+# Loaders zijn helper classen voor het laden van de datasets
+loaders = [RavdessPosNegLoader, CremadPosNegLoader]
+
+# Variants zijn de varianten op de dataset door middel van augmentatie
+variants = ["OriginalPN", "TrimmedPN", "augmented_PitchDownPN", ...]
+
+for model in models:
+    for variant in variants:
+        for loader in loaders:
+            print(f"training {model.instance} with {variant} data loaded with {loader.identifier}")
+            data = loader.load_dataset(variant)
+            model.train(data)
+```
+
+Op deze manier konden wij veel testen achter elkaar runnen en de outputs loggen naar een file om deze vervolgens te evalueren.
+
+[evaluatie bestand](assets/other/evaluation.xlsx)
 
 ### Visualizing the outcome of a model (explanatory)
 
