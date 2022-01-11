@@ -22,17 +22,17 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.2 Configuring a Model](#52-Configuring-a-Model)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.3 Training a model](#53-Training-a-model)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.4 Evaluating a model](#54-Evaluating-a-model)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.5 Visualizing the outcome of a model (explanatory)](<#55-Visualizing-the-outcome-of-a-model-(explanatory)>)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.5 Visualizing the outcome of a model (explanatory)](#55-Visualizing-the-outcome-of-a-model-explanatory)\
 [6. Domain knowledge](#6-Domain-knowledge)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.1 Introduction of the subject field](#61-Introduction-of-the-subject-field)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.2 Literature research](#62-Literature-research)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.3 Explanation of Terminology, jargon and definitions](#63-Explanation-of-Terminology,-jargon-and-definitions)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.3 Explanation of Terminology, jargon and definitions](#63-Explanation-of-Terminology-jargon-and-definitions)\
 [7. Data preprocessing](#7-Data-preprocessing)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.1 Data exploration](#71-Data-exploration)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.2 Data cleansing](#72-Data-cleaning)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.3 Data preparation](#73-Data-preparation)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.4 Data explanation](#74-Data-explanation)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.5 Data visualization (exploratory)](<#75-Data-visualization-(exploratory)>)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.5 Data visualization (exploratory)](#75-Data-visualization-exploratory)\
 [8. Communication](#8-Communication)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8.1 Presentations](#81-Presentations)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8.2 Writing paper](#82-Writing-paper)
