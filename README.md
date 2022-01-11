@@ -9,33 +9,33 @@
 [1. Introductie](#1-Introductie)\
 [2. Datacamp courses](#2-Datacamp-courses)\
 [3. Reflection & Evaluation](#3-Reflection--Evaluation)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Reflection on own contribution](#reflection-on-own-contribution)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Reflection on own learning objectives](#reflection-on-own-learning-objectives)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.3 Evaluation on the group project](#Evaluation-on-the-group-project)\
-[4. Research project](#Research-project)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Task definition](#Task-definition)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.2 Evaluation](#Evaluation)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3 Conclusions](#Conclusions)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.4 Planning](#Planning)\
-[5. Predictive Analytics](#Predictive-Analytics)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.1 Selecting a Model](#Selecting-a-Model)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.2 Configuring a Model](#Configuring-a-Model)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.3 Training a model](#Training-a-model)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.4 Evaluating a model](#Evaluating-a-model)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.5 Visualizing the outcome of a model (explanatory)](<#Visualizing-the-outcome-of-a-model-(explanatory)>)\
-[6. Domain knowledge](#Domain-knowledge)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.1 Introduction of the subject field](#Introduction-of-the-subject-field)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.2 Literature research](#Literature-research)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.3 Explanation of Terminology, jargon and definitions](#Explanation-of-Terminology,-jargon-and-definitions)\
-[7. Data preprocessing](#Data-preprocessing)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.1 Data exploration](#Data-exploration)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.2 Data cleansing](#Data-cleaning)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.3 Data preparation](#Data-preparation)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.4 Data explanation](#Data-explanation)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.5 Data visualization (exploratory)](<#Data-visualization-(exploratory)>)\
-[8. Communication](#Communication)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8.1 Presentations](#Presentations)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8.2 Writing paper](#Writing-paper)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Reflection on own contribution](#31-reflection-on-own-contribution)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Reflection on own learning objectives](#32-reflection-on-own-learning-objectives)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.3 Evaluation on the group project](#33-Evaluation-on-the-group-project)\
+[4. Research project](#3-Research-project)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Task definition](#41-Task-definition)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.2 Evaluation](#42-Evaluation)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3 Conclusions](#43-Conclusions)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.4 Planning](#44-Planning)\
+[5. Predictive Analytics](#5-Predictive-Analytics)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.1 Selecting a Model](#51-Selecting-a-Model)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.2 Configuring a Model](#52-Configuring-a-Model)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.3 Training a model](#53-Training-a-model)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.4 Evaluating a model](#54-Evaluating-a-model)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5.5 Visualizing the outcome of a model (explanatory)](<#55-Visualizing-the-outcome-of-a-model-(explanatory)>)\
+[6. Domain knowledge](#6-Domain-knowledge)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.1 Introduction of the subject field](#61-Introduction-of-the-subject-field)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.2 Literature research](#62-Literature-research)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[6.3 Explanation of Terminology, jargon and definitions](#63-Explanation-of-Terminology,-jargon-and-definitions)\
+[7. Data preprocessing](#7-Data-preprocessing)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.1 Data exploration](#71-Data-exploration)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.2 Data cleansing](#72-Data-cleaning)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.3 Data preparation](#73-Data-preparation)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.4 Data explanation](#74-Data-explanation)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.5 Data visualization (exploratory)](<#75-Data-visualization-(exploratory)>)\
+[8. Communication](#8-Communication)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8.1 Presentations](#81-Presentations)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8.2 Writing paper](#82-Writing-paper)
 
 # 1. Introductie
 
