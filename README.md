@@ -6,9 +6,9 @@
 
 ## Inhoud
 
-[1. Introductie](#1-introductie)\
-[2. Datacamp courses](#2-datacamp-courses)\
-[3. Reflection & Evaluation](#3-reflection-&-evaluation)\
+[1. Introductie](#1%2E-introductie)\
+[2. Datacamp courses](#2%2E-datacamp-courses)\
+[3. Reflection & Evaluation](#3%2E-reflection-&-evaluation)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Reflection on own contribution](#reflection-on-own-contribution)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Reflection on own learning objectives](#reflection-on-own-learning-objectives)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.3 Evaluation on the group project](#Evaluation-on-the-group-project)\
@@ -35,7 +35,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7.5 Data visualization (exploratory)](<#Data-visualization-(exploratory)>)\
 [8. Communication](#Communication)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8.1 Presentations](#Presentations)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8.2 Writing paper](#Writing-paper)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[8.2 Writing paper](#Writing-paper)
 
 # 1. Introductie
 
