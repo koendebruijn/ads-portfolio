@@ -8,7 +8,7 @@
 
 [1. Introductie](#1%2E-introductie)\
 [2. Datacamp courses](#2%2E-datacamp-courses)\
-[3. Reflection & Evaluation](#3%2E-reflection-&-evaluation)\
+[3. Reflection & Evaluation](#3%2E-Reflection-&-Evaluation)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Reflection on own contribution](#reflection-on-own-contribution)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Reflection on own learning objectives](#reflection-on-own-learning-objectives)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.3 Evaluation on the group project](#Evaluation-on-the-group-project)\
