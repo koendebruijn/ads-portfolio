@@ -12,7 +12,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Reflection on own contribution](#31-reflection-on-own-contribution)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Reflection on own learning objectives](#32-reflection-on-own-learning-objectives)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.3 Evaluation on the group project](#33-Evaluation-on-the-group-project)\
-[4. Research project](#3-Research-project)\
+[4. Research project](#4-Research-project)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Task definition](#41-Task-definition)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.2 Evaluation](#42-Evaluation)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4.3 Conclusions](#43-Conclusions)\
@@ -159,7 +159,7 @@ Zoals eerder benoemd is de samenwerking in dit groepje mij erg goed bevallen en 
 
 <!-- TODO -->
 
-## 4.5 Planning
+## 4.4 Planning
 
 Als scum omgeving hebben wij GitHub. Wij hebben de GitHub issues gebruikt als stories en de GitHub milestones als sprints. Op deze manier konden wij stories aan sprints toevoegen en deze vervolgens filteren op de sprint.
 
