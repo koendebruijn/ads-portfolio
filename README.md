@@ -6,21 +6,22 @@
 
 ## Inhoud
 
-1.  [Introductie](#introductie)
-2.  [Datacamp courses](#datacamp-courses)
-3.  [Reflection on own contribution](#reflection-on-own-contribution)
-4.  [Reflection on own learning objectives](#reflection-on-own-learning-objectives)
-5.  [Evaluation on the group project](#Evaluation-on-the-group-project)
-6.  [Research project](#Research-project)
-7.  [Domain knowledge](#Domain-knowledge)
-8.  [Data preprocessing](#Data-preprocessing)
-9.  [Communication](#Communication)
+[1. Introductie](#1-introductie)\
+[2. Datacamp courses](#2-datacamp-courses)\
+[3. Reflection & Evaluation](#3-reflection-&-evaluation)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.1 Reflection on own contribution](#reflection-on-own-contribution)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.2 Reflection on own learning objectives](#reflection-on-own-learning-objectives)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3.3 Evaluation on the group project](#Evaluation-on-the-group-project)\
+[4. Research project](#Research-project)\
+[5. Domain knowledge](#Domain-knowledge)\
+[6. Data preprocessing](#Data-preprocessing)\
+[7. Communication](#Communication)
 
-## Introductie
+# 1. Introductie
 
 In dit portfolio lees je over mijn deelnamen aan de minor Applied Data Science als student ICT Software Engineering.
 
-## Datacamp courses
+# 2. Datacamp courses
 
 Ik heb alle nodige Datacamp courses voltooit. Ik had al een beetje Python voorkennis, maar ik heb besloten om alle courses te maken. Dit heb ik gedaan, omdat ik alleen nog maar basis kennis had over Python en ik wist niets over alle library's die gebruikt worden in data science. Ik heb geen moeilijkheden ondervonden bij het maken van de courses
 
@@ -44,6 +45,8 @@ Ik heb alle nodige Datacamp courses voltooit. Ik had al een beetje Python voorke
 ![cert](./assets/datacamp/cert16.png)
 
 </details>
+
+# 3. Reflection & Evaluation
 
 ## Reflection on own contribution
 
@@ -160,9 +163,9 @@ Wij hebben als groep ook een roadmap gemaakt. Dit vonden wij allemaal erg handig
 
 ### Selecting a model
 
-> The student has supported their model selection with references from literature
-
 Voor het project heb ik een SVM machine learning model gemaakt. Ik heb dit model gekozen, omdat ik tijdens het literatuur onderzoek [dit onderzoek](https://www.sciencedirect.com/science/article/pii/S1746809420300501) heb gevonden. In dit onderzoek word een SVM gebruikt voor het classifiseren van emotie op de RAVDESS dataset.
+
+### Configuring a Model
 
 Zoals eerder benoemd heeft ieder project lid een machine learning model gekozen om te implementeren. Daarna wilde wij alle resultaten met elkaar vergelijken. Om alles makkelijk te runnen hebben we een `BaseModel` class gemaakt. Elk model overerft deze class.
 
@@ -176,19 +179,25 @@ class BaseModel():
         raise NotImplementedError
 ```
 
+Om tot de beste hyper parameters te komen hebben wij een grid search uitgevoerd. Na het runnen van de grid search waren dit de hyper parameters die eruit kwamen.
+
+```json
+{
+  "C": 10,
+  "gamma": 0.001,
+  "kernel": "rbf"
+}
+```
+
 [Zie hier het notebook voor de SVM](assets/notebooks/svm.ipynb)
-
-### Configuring a Model
-
-> The student explains why the chosen configuration is reasonable (for instance using relevant literature)
 
 ### Training a model
 
 > The student takes appropriate countermeasures to prevent under- and overfitting and tunes hyperparameters
 
-### Evaluating a model
+<!-- TODO: Dit stukje -->
 
-> The student compares several models and additionally explains the differences between the models.
+### Evaluating a model
 
 Zoals eerder benoemd hebben we allemaal een model gemaakt die de `BaseModel` oveerft. Daarna heb ik een `moddel_runner` ontwikkeld waarin wij heel simpel alle modellen kunnen runnen op verschillende datasets.
 
@@ -210,42 +219,46 @@ for model in models:
             model.train(data)
 ```
 
-Op deze manier konden wij veel testen achter elkaar runnen en de outputs loggen naar een file om deze vervolgens te evalueren.
-
-[evaluatie bestand](assets/other/evaluation.xlsx)
+Op deze manier konden wij veel testen achter elkaar runnen en de outputs loggen naar een file om deze vervolgens te evalueren ([evaluatie bestand](assets/other/evaluation.xlsx)). Met deze informatie konden wij makkelijk bekijken hoe de verschillende modelen reageren op bijvoorbeeld het cleanen of augementeren van de audio. Ook konden wij de resultaten van alle modelen gemakkelijk met elkaar vergelijken voor de evaluatie. Uiteindelijk is er voor het eindproduct geen een van deze modellen gekozen en hebben we ons de laatste tijd gefocust op de CNN die op het moment het beste presteerde.
 
 ### Visualizing the outcome of a model (explanatory)
 
-> The student has visualized the results both quantatively in a plot and where applicable qualitatively using examples.
+Voor de SVM die ik heb gemaakt voor het Smart Teddy project heb ik de uitkomst niet gevisualiseerd. Ons groepje heeft voor de learning lab de SVM besproken. Ik was verantwoordelijk voor het maken van het example notebook. Ik dit notebook heb ik wel de uitkomsten van het model gevisualiseerd. Op deze manier kon ik het effect van hyperparameters laten zien op de decision boundary van het model. [bekijk hier het notebook voor de learning lab](assets/notebooks/learning_lab.ipynb)
 
 ## Domain knowledge
 
 ### Introduction of the subject field
 
-> The student has written a good and complete introduction of the subject field.
+Ik heb tijdens dit project gewerkt aan het project Smart Teddy. Dit is een project van Dr. Hani al-Ers. De Smart Teddy moet de leef omstandigheden van dementerende senioren verbeteren. Dit kan omdat de Smart Teddy helemaal vol zit met sensoren. Wij waren verantwoordeijk voor het detecteren en classifiseren van emotie. Emotie speelt een belangrijke rol als indicatie voor het welzijn van de senioren. Waneer de senioren bijvoorbeeld vaak boos zijn of juist helemaal geen emotie tonen kan dit betekenen dat zij aan het verslechteren zijn. Helaas was er voor dit project geen echte data beschrikbaar. Wij moesten dus bestaande datasets van acteurs gebruiken. Deze acteurs spraken dan zinnen in verschillende emoties.
 
 ### Literature research
 
 > The student has found enough relevant literature and all in-text literature references and bibliography are present.
 
+Emoties classificeren is geen nieuw onderwerp in de wereld van data science. Er zijn al veel mensen die dit al eens gedaan hebben en daar een paper over hebben geschreven.
+
+<!-- todo -->
+
 ### Explanation of Terminology, jargon and definitions
 
-> The student explained all important and all relevant terminology, jargon and definitions.
+- **Emotie**: Een emotie is een innerlijke beleving of gemoedsbeweging zoals vreugde, angst, boosheid, verdriet en kan door een situatie of gebeurtenis worden opgeroepen [bron](https://nl.wikipedia.org/wiki/Emotie)
+- **Support vector machine (SVM)**: Een set van supervised learning methodes voor classificatie, regressie en outliner detection. [bron](https://scikit-learn.org/stable/modules/svm.html)
+- **Convolutional Neural Network (CNN)**: Een deep learning algoritme wat gebruikt word voor beeldherkenning. [bron](https://www.techtarget.com/searchenterpriseai/definition/convolutional-neural-network)
+- **Augmentatie**: Je maakt meer data door bijvoorbeeld bij elke sample de pitch of de snelheid van je audio te veranderen. [bron](https://en.wikipedia.org/wiki/Data_augmentation)
+- **RAVDESS, CREMA-D**: Dit zijn de twee datasets die het meeste worden gebruikt bij classifiseren van emotie. Bij deze datasets worden zinnen ingesproken door acteurs in vershillende emoties [CREMA-D](https://www.kaggle.com/ejlok1/cremad) [RAVDESS](https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio)
+- **Audio Features**: Het halen van zinvolle informatie uit audiosignalen. [bron](https://www.sciencedirect.com/topics/engineering/audio-feature)
+- **Scrum**: Scrum is een agile framework voor het devolopen van producten in groepen/teams.
+- **Inherentice (OOP)**: Inherentice is het mechanisme van het baseren van een object of klasse op een ander object of klasse, met behoud van een vergelijkbare implementatie. [bron](<https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)>)
 
 ## Data preprocessing
 
 ### Data exploration
 
-> The student properly examined and visualized the data, distributions, outliers, correlations and used that analysis to give directions for an early hypothesis.
+Jaap heeft zich bezig gehouden met de data exploration. Ik heb daar veder geen bijdragen aan geleverd.
 
-### Data cleansing
-
-> The student cleansed the data in a good and sufficient way.
+### Data cleaning
 
 De audio bestanden uit onze dataset beginnen en eidigen vaak met een stuk silte. Wij hebben librosa gebruikt om deze stilte eraf te trimmen. Dit leide namelijk tot een betere presatie van de models.
-
-<details>
-<summary>Open voor de code snippet voor het cleanen van de audio</summary>
 
 ```py
 def _process_audio(value):
@@ -254,26 +267,43 @@ def _process_audio(value):
     return x, sample_rate
 ```
 
-</details>
-
 ### Data preparation
 
-> The student prepared the data in an appropriate way, where necessary transforming data, removing outliers, filling in missing values, etc.
+Voor data preparation/preprocessing heb ik meerde dingen gedaan.
+
+Helemaal in het begin had ik een pipeline voor het processen van audio files naar MFCC. Zie hier het [notebook](assets/notebooks/mfcc.ipynb). Deze pipeline hebben wij in het vervolg van het project niet meer gebruikt.
+
+Later in het project heb ik augmentation toe gevoegd aan de pipeline voor de data van de CNN. Zie hier het [notebook](assets/notebook/processable.ipynb). Na het testen met de augmentation had dit alleen maar negatief effect op de CNN en hebben wij dit niet gebruikt.
 
 ### Data explanation
 
 > The student described the the entire dataset in a good and sufficient way.
 
+Voor dit project hebben wij meerdere datasets gecombineerd tot een grote dataset. Wij hebben de volgende datasets gebruikt:
+
+1. [CREMA-D](https://www.kaggle.com/ejlok1/cremad)
+2. [RAVDESS](https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio)
+3. [SAVEE](https://www.kaggle.com/barelydedicated/savee-database)
+4. [TESS](https://www.kaggle.com/ejlok1/toronto-emotional-speech-set-tess)
+
+![dataset summarization](assets/images/dataset-summarization.png)
+
 ### Data visualization (exploratory)
 
-> The student correctly visualized the data in support of decisions made for learning the model
+Wij hebben dit project voornaamlijk gewerkt met audio data. Audio kan je op veel manieren weergeven. Een van de meest gebruikte manieren is een spectrogram. Hieronder zie je twee verschillende samples. De eerste is van een neutrale sample en de tweede is een angry sample. Je kunt wel verschil zien tussen de twee spectrogramen, maar audio blijft wel een van de moeilijkere dingen om af te lezen. [Dit artiekel](https://www.izotope.com/en/learn/understanding-spectrograms.html) heeft mij erg geholpen met het beter kunnen lezen van spectrogrammen.
+
+![neutral spectrogram](assets/images/neu-spec.png)
+![angry spectrogram](assets/images/ang-spec.png)
 
 ## Communication
 
 ### Presentations
 
-> The student prepared or gave more than two (internal/external) solid presentations.
+Tijdens de internen presentaties nam Jaap altijd het iniatief om te presenteren. Voor de externe presentaties spraken we van te voren af wie er welk gedeelte zou presenteren. Ik heb een deel gepresenteerd bij de volgende presentaties:
+
+- [External Presentation 1](assets/other/ex-pres1.pdf)
+- [Learning Lab](assets/other/ll-pres.pdf)
 
 ### Writing paper
 
-> The student has made a lot of effort on writing the paper.
+Zahir, Brenno, Jaap en Yuri waren begonnen aan de paper terwijl ik nog bezig was met het prototypen. Nadat ik klaar was met het prototypen heb ik aangehaakt bij het helpen bij de paper. Wij hebben met zijn alle de paper zin voor zin grondig doorgenomen om te zorgen dat alles goed zou zijn.
