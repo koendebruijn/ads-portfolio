@@ -241,7 +241,7 @@ for model in models:
 
 Op deze manier konden wij veel testen achter elkaar runnen en de outputs loggen naar een file om deze vervolgens te evalueren ([evaluatie bestand](assets/other/evaluation.xlsx)). Met deze informatie konden wij makkelijk bekijken hoe de verschillende modelen reageren op bijvoorbeeld het cleanen of augementeren van de audio. Ook konden wij de resultaten van alle modelen gemakkelijk met elkaar vergelijken voor de evaluatie. Uiteindelijk is er voor het eindproduct geen een van deze modellen gekozen en hebben we ons de laatste tijd gefocust op de CNN die op het moment het beste presteerde.
 
-## 5.6 Visualizing the outcome of a model (explanatory)
+## 5.5 Visualizing the outcome of a model (explanatory)
 
 Voor de SVM die ik heb gemaakt voor het Smart Teddy project heb ik de uitkomst niet gevisualiseerd. Ons groepje heeft voor de learning lab de SVM besproken. Ik was verantwoordelijk voor het maken van het example notebook. Ik dit notebook heb ik wel de uitkomsten van het model gevisualiseerd. Op deze manier kon ik het effect van hyperparameters laten zien op de decision boundary van het model. [bekijk hier het notebook voor de learning lab](assets/notebooks/learning_lab.ipynb)
 
