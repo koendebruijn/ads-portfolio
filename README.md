@@ -143,21 +143,21 @@ Zoals eerder benoemd is de samenwerking in dit groepje mij erg goed bevallen en 
 
 ## 4.1 Task definition
 
-> The student has clearly described the context (reason and problem definition) and research questions that are reasonable given the context.
+Zoals word benoemd in [6.1 Introduction of the subject field](#61-Introduction-of-the-subject-field) zijn wij onderdeel van het Smart Teddy project. Ons doel is het classifiseren van emoties uit audio.
 
-<!-- TODO -->
+Onze hoofdvraag is als volgt:
+
+> Which machine learning models achieve the highest precision classifying emotions, using datasets containing audio with labeled vocal emotional expressions recorded in a professional recording studio, in order to recognize emotions within household environments?
+
+Zoals je ziet specificeren wij niet in de hoofdvraag dat ons project voor dementerende senioren is. Dit kunnen wij namelijk aan het einde van ons onderzoek helemaal niet bewijzen, omdat wij niet beschikken over audio fragmenten van dementerende senioren. Wel hebben wij besloten om huishoudelijke achtergrond geluiden toe te voegen aan onze audio dataset. Dit hebben wij gedaan om onze data zo goed mogelijk te laten lijken op de data hoe deze er uiteindelijk zou gaan uitzien.
 
 ## 4.2 Evaluation
 
-> The student has given several clear and motivated directions for future work.
-
-<!-- TODO -->
+Voor future work zou ik een gelabelde dataset opzetten die bestaat uit emoties opgenomen door Smart Teddy die bij een senior in het huis staat. Ik zou dan testen hoe ons model scoort op de echte data van senioren en niet op audio ingesproken door acteurs. Veder kan je ook nog ons model testen op langere samples. De datasets die wij hebben gebruikt spreken de acteurs allemaal 1 zin. Volgens de Harvard hersenwetenschapper Dr. Jill Bolte Taylor [90 Seconds to Emotional Resilience](https://www.alysonmstone.com/90-seconds-to-emotional-resilience/) duurt een emotie vaak 90 seconden. Misschien zou ons model beter reageren op langere sampels, omdat hierin dan duidelijker blijkt dat de persoon een bepaalde emotie toont.
 
 ## 4.3 Conclusions
 
-> The student has discussed the results, illustrated by examples (qualitative analysis)and answers the original research questions based on the findings in this study and has tested the outcomes for statistical significance.
-
-<!-- TODO -->
+Uit onze conclusie blijkt dat wij met een precision van 84% emoties kunnen classifiseren op onze gecombineerde dataset. Voor ons project hebben wij ook onze ook huishoudelijke achtergrond geluiden toegevoegd. Dit hebben wij gedaan om onze samples meer te laten lijken op de huishoudelijke omgeving van de senioren. Met het toevoegen van de achtergrond geluiden resulteerde dit op een precision van 80%. Dit resulteerd dus in een iets lagere precision. Hieruit kunnen wij concluderen dat ons model goed gebruikt zo kunnen worden in de zorg.
 
 ## 4.4 Planning
 
@@ -199,7 +199,7 @@ class BaseModel():
         raise NotImplementedError
 ```
 
-Om tot de beste hyper parameters te komen hebben wij een grid search uitgevoerd. Na het runnen van de grid search waren dit de hyper parameters die eruit kwamen.
+Samen met Dr. Hani al-Ers zijn wij tot het besluit gekomen om ons te richten op precision. Om tot de beste hyper parameters te komen hebben wij een grid search uitgevoerd. Na het runnen van de grid search waren dit de hyper parameters die eruit kwamen.
 
 ```json
 {
@@ -213,9 +213,7 @@ Om tot de beste hyper parameters te komen hebben wij een grid search uitgevoerd.
 
 ## 5.3 Training a model
 
-> The student takes appropriate countermeasures to prevent under- and overfitting and tunes hyperparameters
-
-<!-- TODO: Dit stukje -->
+Zoals hierboven vermeld heb ik voor het trainen een gridsearch uitgevoerd om tot de optimale hyperparameters te komen.
 
 ## 5.4 Evaluating a model
 
@@ -253,11 +251,22 @@ Ik heb tijdens dit project gewerkt aan het project Smart Teddy. Dit is een proje
 
 ## 6.2 Literature research
 
-> The student has found enough relevant literature and all in-text literature references and bibliography are present.
+Emoties classificeren is geen nieuw onderwerp in de wereld van data science. Er zijn al veel mensen die dit al eens gedaan hebben en daar een paper over hebben geschreven. Yuri, Jaap, Zahir en Brenno hadden een story om nuttige onderzoeken te vinden. Daarna hebben zij de meest nuttige door gestuurd naar Julian en ik die op dat moment met een andere stories bezig waren.
 
-Emoties classificeren is geen nieuw onderwerp in de wereld van data science. Er zijn al veel mensen die dit al eens gedaan hebben en daar een paper over hebben geschreven.
+Ik heb vervolgens de volgende onderzoeken gelezen:
 
-<!-- todo -->
+- [Speech Emotion Detection using IoT based Deep Learning for Health Care](https://ieeexplore.ieee.org/abstract/document/9005638/authors#authors)
+- [A Speech Emotion Recognition Solution-based on Support Vector Machine for Children with Autism Spectrum Disorder to Help Identify Human Emotions](https://ieeexplore.ieee.org/document/9249147)
+
+Deze twee onderzoeken gebruikte beide de RAVDESS dataset. Het verschil bij de onderzoeken zit hem vooral in de manier hoe de data word voorbereid en welk model er word gebruikt.
+
+|                     | Speech Emotion Detection using IoT based Deep Learning for Health Care | A Speech Emotion Recognition Solution-based on Support Vector Machine for Children with Autism Spectrum Disorder to Help Identify Human Emotions |
+| ------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Dataset             | RAVDESS                                                                | RAVDESS                                                                                                                                          |
+| Emoties             | happines, sadness, suprised, anger, fearful, disgust                   | happines, sadness, suprised, anger, fearful, disgust                                                                                             |
+| Model               | CNN                                                                    | SVM                                                                                                                                              |
+| Audio preprocessing | Spectrogram                                                            | MFCC's                                                                                                                                           |
+| Accuracy            | 63,9% (met achtergrond geluiden)                                       | zonder augmentation<br>- 78% vrouw <br>- 71% man <br><br>data augmentation<br>- 93% man<br>- 95% vrouw                                           |
 
 ## 6.3 Explanation of Terminology, jargon and definitions
 
@@ -265,10 +274,12 @@ Emoties classificeren is geen nieuw onderwerp in de wereld van data science. Er 
 - **Support vector machine (SVM)**: Een set van supervised learning methodes voor classificatie, regressie en outliner detection. [bron](https://scikit-learn.org/stable/modules/svm.html)
 - **Convolutional Neural Network (CNN)**: Een deep learning algoritme wat gebruikt word voor beeldherkenning. [bron](https://www.techtarget.com/searchenterpriseai/definition/convolutional-neural-network)
 - **Augmentatie**: Je maakt meer data door bijvoorbeeld bij elke sample de pitch of de snelheid van je audio te veranderen. [bron](https://en.wikipedia.org/wiki/Data_augmentation)
-- **RAVDESS, CREMA-D**: Dit zijn de twee datasets die het meeste worden gebruikt bij classifiseren van emotie. Bij deze datasets worden zinnen ingesproken door acteurs in vershillende emoties [CREMA-D](https://www.kaggle.com/ejlok1/cremad) [RAVDESS](https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio)
+- **RAVDESS, CREMA-D, SAVEE, TESS**: Dit zijn de twee datasets die het meeste worden gebruikt bij classifiseren van emotie. Bij deze datasets worden zinnen ingesproken door acteurs in vershillende emoties. [CREMA-D](https://www.kaggle.com/ejlok1/cremad), [RAVDESS](https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio), [SAVEE](https://www.kaggle.com/barelydedicated/savee-database) & [TESS](https://www.kaggle.com/ejlok1/toronto-emotional-speech-set-tess)
 - **Audio Features**: Het halen van zinvolle informatie uit audiosignalen. [bron](https://www.sciencedirect.com/topics/engineering/audio-feature)
 - **Scrum**: Scrum is een agile framework voor het devolopen van producten in groepen/teams.
 - **Inherentice (OOP)**: Inherentice is het mechanisme van het baseren van een object of klasse op een ander object of klasse, met behoud van een vergelijkbare implementatie. [bron](<https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)>)
+- **Spectrogram**: Een spectrogram is een visuele weergave van het spectrum van frequenties van een audio signaal. [bron](https://en.wikipedia.org/wiki/Spectrogram)
+- **MFCC**: De MFCC zijn de coëfficiënten van het Mel-cepstrum. Het Mel-cepstrum is het cepstrum berekend op de Mel-banden (geschaald naar het menselijk oor) in plaats van het Fourier-spectrum. [bron](https://www.igi-global.com/dictionary/gtm-user-modeling-aiga-weight/18257)
 
 # 7. Data preprocessing
 
@@ -297,8 +308,6 @@ Later in het project heb ik augmentation toe gevoegd aan de pipeline voor de dat
 
 ## 7.4 Data explanation
 
-> The student described the the entire dataset in a good and sufficient way.
-
 Voor dit project hebben wij meerdere datasets gecombineerd tot een grote dataset. Wij hebben de volgende datasets gebruikt:
 
 1. [CREMA-D](https://www.kaggle.com/ejlok1/cremad)
@@ -306,7 +315,19 @@ Voor dit project hebben wij meerdere datasets gecombineerd tot een grote dataset
 3. [SAVEE](https://www.kaggle.com/barelydedicated/savee-database)
 4. [TESS](https://www.kaggle.com/ejlok1/toronto-emotional-speech-set-tess)
 
-![dataset summarization](assets/images/dataset-summarization.png)
+|                      | RAVDESS                                                                | CREMA-D                                             | TESS                                                           | SAVEE                                                          |
+| -------------------- | ---------------------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| Aantal samples       | 7356                                                                   | 7442                                                | 2800                                                           | 480                                                            |
+| Aantal audio samples | 1440                                                                   | 7442                                                | 2800                                                           | 480                                                            |
+| Aantal acteurs       | 24 (12 man, 12 vrouw)                                                  | 91 (48 man, 43 vrouw)                               | 2 (0 man, 2 vrouw)                                             | 4 (4 man, 0 vrouw)                                             |
+| Emoties              | Anger<br>Disgust<br>Fear<br>Happy<br>Neutral<br>Sad<br>Calm<br>Suprise | Anger<br>Disgust<br>Fear<br>Happy<br>Neutral<br>Sad | Anger<br>Disgust<br>Fear<br>Happy<br>Neutral<br>Sad<br>Suprise | Anger<br>Disgust<br>Fear<br>Happy<br>Neutral<br>Sad<br>Suprise |
+
+Zoals je ziet heeft niet elke dataset dezelfde emoties. Wij hebben dan ook samen met Dr. Hani al-Ers besproken om op de volgende emoties te focussen:
+
+- Anger
+- Happy
+- Neutral
+- Sad
 
 ## 7.5 Data visualization (exploratory)
 
