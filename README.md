@@ -232,6 +232,30 @@ class BaseModel():
 
     def grid_search():
         raise NotImplementedError
+
+    def model_accuracy(model, X_train, X_test, y_train, y_test):
+        # Train accuracy
+        y_pred = model.predict(X_train)
+        accuracy = accuracy_score(y_train, y_pred)
+        print(f"Train accuracy is: {accuracy}")
+
+        # Test accuracy
+        y_pred = model.predict(X_test)
+        accuracy = accuracy_score(y_test, y_pred)
+        print(f"Test accuracy is: {accuracy}")
+
+        # Precision score
+        print(f"Precision: {precision_score(y_test, y_pred, average=None)}")
+        print("\nClassification Report:")
+        print(classification_report(y_test, y_pred))
+
+        # Confusion matrix
+        plot_confusion_matrix(model, X_test, y_test, normalize='true')
+
+        fig1 = plt.gcf()
+        plt.show()
+        plt.draw
+        fig1.savefig(path + dt)
 ```
 
 Samen met Dr. Hani al-Ers zijn wij tot het besluit gekomen om ons te richten op precision. Om tot de beste hyper parameters te komen hebben wij een grid search uitgevoerd. Na het runnen van de grid search waren dit de hyper parameters die eruit kwamen.
@@ -248,7 +272,7 @@ Samen met Dr. Hani al-Ers zijn wij tot het besluit gekomen om ons te richten op 
 
 ## 5.3 Training a model
 
-Zoals hierboven vermeld heb ik voor het trainen een gridsearch uitgevoerd om tot de optimale hyperparameters te komen.
+Zoals hierboven vermeld heb ik voor het trainen een gridsearch uitgevoerd om tot de optimale hyperparameters te komen. Wij trainde onze modellen op een fysiek gesplite dataset. Dit hebben wij gedaan zodat we de modellen eerlijker kunnen vergelijken met elkaar, omdat ze allemaal op dezelfde data trainen en testen. Na het trainen word in de `BaseModel` de functie `model_accuracy()` aangeroepen. Deze print vervolgens resultaten waarmee wij later de modellen met elkaar kunnen vergelijken.
 
 ## 5.4 Evaluating a model
 
@@ -315,6 +339,9 @@ Deze twee onderzoeken gebruikte beide de RAVDESS dataset. Het verschil bij de on
 - **Inherentice (OOP)**: Inherentice is het mechanisme van het baseren van een object of klasse op een ander object of klasse, met behoud van een vergelijkbare implementatie. [bron](<https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)>)
 - **Spectrogram**: Een spectrogram is een visuele weergave van het spectrum van frequenties van een audio signaal. [bron](https://en.wikipedia.org/wiki/Spectrogram)
 - **MFCC**: De MFCC zijn de coëfficiënten van het Mel-cepstrum. Het Mel-cepstrum is het cepstrum berekend op de Mel-banden (geschaald naar het menselijk oor) in plaats van het Fourier-spectrum. [bron](https://www.igi-global.com/dictionary/gtm-user-modeling-aiga-weight/18257)
+- **Hyper parameters**: Een waarde die effect heeft op het leer proces van het machine learning model
+- **Grid search**: Grid search is een techniek die probeert de optimale waarden van hyperparameters te berekenen [bron](https://medium.com/fintechexplained/what-is-grid-search-c01fe886ef0a)
+- **Precision**: Precision is een indicator van de prestaties van een machine learning-model, de kwaliteit van een positieve voorspelling van het model [bron](https://c3.ai/glossary/machine-learning/precision/)
 
 # 7. Data preprocessing
 
@@ -339,7 +366,7 @@ Voor data preparation/preprocessing heb ik meerde dingen gedaan.
 
 Helemaal in het begin had ik een pipeline voor het processen van audio files naar MFCC. Zie hier het [notebook](assets/notebooks/mfcc.ipynb). Deze pipeline hebben wij in het vervolg van het project niet meer gebruikt.
 
-Later in het project heb ik augmentation toe gevoegd aan de pipeline voor de data van de CNN. Zie hier het [notebook](assets/notebook/processable.ipynb). Na het testen met de augmentation had dit alleen maar negatief effect op de CNN en hebben wij dit niet gebruikt.
+Julian heeft in dit project de pipeline opgezet. Deze bestaat uit `Generators`, `DatasetLoaders` en `Processables`. Later in het project heb ik augmentation toe gevoegd aan de pipeline voor de data van de CNN. Zie hier een implementatie van de [processable met augmentation](assets/notebooks/processable.ipynb). Na het testen met de augmentation had dit alleen maar negatief effect op de CNN en hebben wij dit niet gebruikt. Veder heb ik ook nog een aantal imlementaties gemaakt op basis van de `DatasetLoader`. [zie hier het notebook](assets/notebooks/dataset_loader.ipynb). Ik heb niet alle implementaties gemaakt in dit notebook.
 
 ## 7.4 Data explanation
 
